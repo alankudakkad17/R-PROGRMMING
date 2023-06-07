@@ -1,0 +1,7 @@
+ind<-c(1,2,3,4,5,6,7,8,9,10)
+dep<-c(0,0,0,0,0,1,1,1,1,1)
+log<-glm(dep~ind)
+w<-as.integer(readline(prompt="enter the number:"))
+o<-data.frame(v1<-c(w))
+x<-predict(log,o)
+print(x)
